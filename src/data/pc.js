@@ -1,0 +1,186 @@
+const data = [
+    {
+        title: 'PC Atlas',
+        price: 799.00,
+        image:'https://www.flowup.shop/web/image/product.product/3136/image_1024/PC%20Atlas%20GEFORCE%20RTX%C2%AE%203050%20%28AZZA%20SPECTRA%20BLACK%29?unique=22f3140',
+        description: "L'Atlas est le PC gamer abordable par excellence ! Le PC le moins cher que nous proposons tout en ayant des performances en jeu de très haut niveau. Le gaming en haute qualité n'a jamais été aussi accessible, pour environ 800€ vous pouvez jouer à tous les jeux grâce à la carte graphique RTX 3050 !",
+        components :{
+            graphicsCard: 'ASUS DUAL OC RTX 3050 8GB',
+            processor: 'AMD Ryzen 5 4500 (3.6 GHz / 4.1 GHz)',
+            ram: 'Corsair Vengeance 2X8Go RGB DDR4 3200Mhz',
+            storage: 'PNY CS1030 500GB M.2 NVMe',
+      },
+    },
+    {
+        title: 'PC Typhoon',
+        price: 849.00,
+        image:'https://www.flowup.shop/web/image/product.product/3131/image_1024/PC%20Typhoon%20GEFORCE%20RTX%C2%AE%204060%20%28AMD%20Ryzen%205%205600%204.4%20GHz%29?unique=8bcee4b',
+        description: "Le Typhoon est parfait pour ceux qui souhaitent se lancer dans le gaming avec un budget raisonnable. Malgré son prix abordable, il ne fait aucun compromis sur la qualité et les performances. Vous bénéficierez d'un système puissant et fiable, prêt à affronter les jeux les plus exigeants du marché.",
+        components :{
+            graphicsCard: 'PALIT RTX4060 Dual 8GB GDDR6',
+            processor: 'AMD Ryzen 5 5600 4.4 GHz',
+            ram: 'Corsair Vengeance 2X8Go RGB DDR4 3200Mhz',
+            storage: 'PNY CS1030 500GB M.2 NVMe',
+      },
+    },
+    {
+        title: 'PC Bengal',
+        price: 899.00,
+        image:'https://www.flowup.shop/web/image/product.product/1450/image_1024/PC%20Bengal%20AMD%20RX%207600?unique=1213136',
+        description: "Pour les fans de AMD ! Cette configuration full AMD promet de superbes performances, c'est un PC gamer puissant et abordable ! Sa carte graphique RX 7600 couplé au processeur AMD Ryzen 5 5500 en fait une configuration idéale pour le gaming en 1080p ou 1440p. Ses performances en jeu sont idéales pour jouer avec de hauts FPS tout en ayant une très belle qualité graphique ! Entre nous, comment ne pas tomber amoureux de son design épuré blanc avec un max de RGB ? Pour environ 1000€ vous pourrez profiter d'une expérience de gaming remarquable",
+        components :{
+            graphicsCard: 'MSI Radeon RX 7600 MECH 2X',
+            processor: 'AMD Ryzen 5 5500 4,2Ghz',
+            ram: 'PNY 2x8Go RGB 3200Mhz',
+            storage: 'PNY CS1030 500go M.2',
+      },
+    },
+    {
+        title: 'PC Savannah',
+        price: 1099.00,
+        image:'https://www.flowup.shop/web/image/product.product/3127/image_1024/PC%20Savannah%20by%20MSI%20GEFORCE%20RTX%C2%AE%203060ti%20%28casque%2C%20clavier%20et%20souris%20offert%29?unique=277527b',
+        description: "Le PC Gamer Savannah MSI est le parfait intermédiaire de la gamme, il est équipé de composants puissants permettant de jouer à l'intégralité des jeux en 1440P ! Il explose littéralement les scores en 1080p, ce PC gamer puissant offre des performances en jeu exceptionnelles pour une expérience de gaming sans concessions. Il est équipé de la célèbre carte graphique RTX 3060 Ti pour performer avec des haut FPS sur les derniers jeux. Offrez vous un setup presque complet avec le bundle MSI clavier, casque et souris offerts ! Vous avez tout pour jouer dans les meilleurs conditions.",
+        components :{
+            graphicsCard: 'Nvidia RTX 3060Ti 8GB',
+            processor: 'AMD Ryzen 5 5600 4.4 GHz',
+            ram: 'Corsair RGB vengeance 2x8GB 3200Mhz',
+            storage: 'MSI SPATIUM M390 SSD 500GO',
+      },
+    },
+    {
+        title: 'PC Moll-E',
+        price: 1299.00,
+        image:'https://www.flowup.shop/web/image/product.product/2722/image_1024/PC%20Moll-E%20GEFORCE%20RTX%C2%AE%204060%20Ti?unique=c638da0',
+        description: "Le PC Moll-e GEFORCE RTX® 4060 Ti est l'équilibre parfait entre design élégant, composants de pointe et technologie avancée, offrant aux gamers la possibilité de découvrir leurs jeux comme jamais auparavant. Descendez dans l'arène de jeu avec le PC Moll-e GEFORCE RTX® 4060 Ti. Conçu pour les vrais passionnés de gaming, ce PC intègre la toute nouvelle carte graphique NVIDIA RTX 4060Ti, promettant des performances de jeu incomparables à un prix exceptionnel. Difficile à croire pour ce prix mais vous pourrez atteindre les 60 FPS en 4K sur pas mal de jeux ! Le pc gamer moll-e est conçu pour vous offrir une expérience de jeu adéquate au meilleur prix !",
+        components :{
+            graphicsCard: 'Nvidia RTX 4060ti VERTO PNY',
+            processor: 'Intel Core i5-13400F (2.5 GHz / 4.6 GHz)',
+            ram: 'Corsair RGB vengeance 2x8GB 3200Mhz',
+            storage: 'PNY SSD CS2230 1To',
+      },
+    },
+    {
+        title: 'PC Cheetoh',
+        price: 1649.90,
+        image:'https://www.flowup.shop/web/image/product.product/3129/image_1024/PC%20Cheetoh%20GEFORCE%20RTX%C2%AE%204070%20%28Corsair%20RGB%20vengeance%202x8GB%203200Mhz%29?unique=c18d8f6',
+        description: "Le PC Cheetoh est l'ordinateur gamer parfait à 1649€, sa carte graphique RTX 4070 et son i5 13600KF ne vous limitera plus ! Ce PC gamer a été pensé pour être totalement optimisé pour le gaming. Ce sont donc de très grosses performances qui vous attendent avec beaucoup de FPS en 1440p voir en 4K ! Sa très grosse carte graphique RTX 4070 de la nouvelle génération vous permettra d'obtenir une qualité d'image exceptionnelle en jeu notamment grâce à la technologie DLSS3 et au Ray Tracing.",
+        components :{
+            graphicsCard: 'ASUS GeForce RTX 4070 12GB',
+            processor: 'Intel core i5-13600KF 5,1Ghz',
+            ram: 'Corsair RGB vengeance 2x8GB 3200Mhz',
+            storage: 'PNY SSD CS2230 1To',
+      },
+    },
+    {
+        title: 'PC Abyssin',
+        price: 1999.00,
+        image:'https://www.flowup.shop/web/image/product.product/1483/image_1024/PC%20Abyssin%20%20GEFORCE%20RTX%C2%AE%204070%20Ti?unique=72bf025',
+        description: "Le PC Abyssin est le PC gamer le plus polyvalent de la gamme, celui-ci permet de faire tourner la plupart des jeux en 1440p et 4k dans les meilleures qualités possibles grâce à son énorme carte graphique Nvidia GeForce RTX 4070Ti. Vous n'avez pas besoin de plus pour profiter pleinement de vos sessions de jeux ! En outre, avec ses 32GB de Ram, un processeur AMR Ryzen 7 5800X et son SSD de 1To, ce pc gamer ultime peut gérer énormément de tâches en même temps. Voici la configuration parfaite pour débuter dans le streaming, commencer le montage vidéo ou pour une immersion gaming exceptionnelle !",
+        components :{
+            graphicsCard: 'PNY GeForce RTX 4070 Ti 12GB VERTO Edition',
+            processor: 'AMD Ryzen 7 5800X 4,7Ghz',
+            ram: 'Corsair Vengeance 2x16GB 3200Mhz RGB',
+            storage: 'Crucial P3 1To Nvme',
+      },
+    },
+    {
+        title: 'PC BlackHawk',
+        price: 2049.00,
+        image:'https://www.flowup.shop/web/image/product.product/2045/image_1024/PC%20BlackHawk%20AMD%20RX%207900%20XT?unique=b9e8ee8',
+        description: "Le PC BlackHawk est le rapport performance/prix ULTIME ! Ce pc gamer ultra performant va ravir les fans de AMD avec sa carte graphique surpuissante RX 7900 XT couplé à un CPU AMD Ryzen 7 5800X pour offrir une expérience jeu inégalable. Ce pc orienté gaming, streaming et montage vidéo est ce qui se fait de mieux pour un ordinateur à moins de 2050 €. ",
+        components :{
+            graphicsCard: 'Sapphire Pulse AMD Radeon RX 7900 XT 20GB',
+            processor: 'AMD Ryzen 7 5800X3D (3.4 GHz / 4.5 GHz)',
+            ram: 'Corsair Vengeance RGB 2x16Go 3200Mhz DDR4',
+            storage: 'PNY SSD CS2230 1To',
+      },
+    },
+    {
+        title: 'PC Rainbow',
+        price: 2499.00,
+        image:'https://www.flowup.shop/web/image/product.product/3095/image_1024/PC%20Rainbow%20%20GEFORCE%20RTX%C2%AE%204070%20Ti?unique=269801a',
+        description: "Parmi les nombreux PC gamer que nous proposons, Le PC Rainbow est certainement notre préféré ! Une masterpiece qui ne risque pas de s'en aller de notre boutique. Le pc gamer Rainbow est l'ultime ordinateur qui éclairera votre setup de 16,8 millions de couleurs. Il est équipé d'un processeur intel I7 de 12th génération et d'une carte graphique surpuissante RTX 4070Ti ! Il porte très bien son nom d'aquarium, on dirait littéralement qu'on peut y mettre des poissons. ",
+        components :{
+            graphicsCard: 'PNY GeForce RTX 4070 Ti 12GB VERTO Edition',
+            processor: 'Intel core i7 12700KF 5.0Ghz',
+            ram: 'Corsair DDR5 Vengeance RGB 2x16GB 5200Mhz',
+            storage: 'Corsair MP600 Core XT - 1 To',
+      },
+    },
+    {
+        title: 'PC BOMBAY',
+        price: 3399.00,
+        image:'https://www.flowup.shop/web/image/product.product/2656/image_1024/PC%20BOMBAY%20GEFORCE%20RTX%C2%AE%204080?unique=3c1a8bd',
+        description: "MSI nous a encore sorti une masterclass de boitier gaming avec le MSI PROSPECT 700R ! Le PC BOMBAY est un vrai monstre de puissance équipé d'une MSI RTX 4080 SUPRIM X couplé à un processeur Intel I7 13700KF le tout avec 32Go de RAM en DDR5. Avec ce PC ultime les performances n'ont plus de limite et le gaming prend une toute autre tournure ! En effet, avec ce pc gamer ultime vous pourrez affronter les jeux les plus gourmands comme cyberpunk en 1440p ou en 4K le tout avec un maximum de FPS !",
+        components :{
+            graphicsCard: 'MSI RTX 4080 SUPRIM X',
+            processor: 'Intel core i7 13700KF 5,4Ghz',
+            ram: 'Corsair DDR5 Vengeance RGB 2x16go 5200Mhz',
+            storage: 'CRUCIAL P3 2To NVME',
+      },
+    },
+    {
+        title: 'PC TUF',
+        price: 3349.00,
+        image:'https://www.flowup.shop/web/image/product.product/2279/image_1024/PC%20TUF%20Gaming%20GT502%20RTX%C2%AE%204080?unique=2420fd2',
+        description: "Découvrez la puissance de jeu inégalée du PC Gamer signé ASUS. Motorisé par une NVIDIA RTX 4080 pour des graphismes saisissants et un processeur Intel Core i7 13700KF pour une performance sans compromis, ce PC transforme l'ordinaire en extraordinaire.",
+        components :{
+            graphicsCard: 'Asus GeForce RTX 4080 TUF 16G',
+            processor: 'Intel core i7 13700KF 5,4Ghz',
+            ram: 'Corsair DDR5 Vengeance RGB 2x16GB 6000Mhz',
+            storage: 'CRUCIAL P3 2To NVME',
+      },
+    },
+    {
+        title: 'PC ORION',
+        price: 3349.00,
+        image:'https://www.flowup.shop/web/image/product.product/1955/image_1024/PC%20ORION%20GEFORCE%20RTX%C2%AE%204080?unique=2f9a326',
+        description: "le PC Gamer Orion est conçu pour exceller dans le gaming et le multitâche. Son cœur palpitant, l'Intel Core i7 13700KF, fonctionne en parfaite harmonie avec la NVIDIA RTX 4080 pour offrir une expérience de jeu en 4K incroyablement fluide et rapide. Doté de 32Go de RAM Corsair DDR5 Vengeance RGB à 5200 MHz, il garantit des transitions sans à-coup entre vos applications préférées, tout en ajoutant une touche esthétique grâce à son éclairage RGB.",
+        components :{
+            graphicsCard: 'Palit RTX 4080 16GB Gamerock',
+            processor: 'Intel core i7 13700KF 5,4Ghz',
+            ram: 'Corsair DDR5 Vengeance RGB 2x16go 5200Mhz',
+            storage: 'CRUCIAL P3 2To NVME',
+      },
+    },
+    {
+        title: 'PC GOOD GUY',
+        price: 4399.00,
+        image:'https://www.flowup.shop/web/image/product.product/2704/image_1024/PC%20GOOD%20GUY%20GEFORCE%20RTX%C2%AE%204090?unique=709f258',
+        description: "Le PC good guy est le PC Ultime, conçu pour les joueurs et les professionnels exigeants. Équipé de la puissante RTX 4090 de NVIDIA et du processeur Intel Core i9 13900KF, ce PC offre des performances inégalées. Avec la mémoire Corsair DDR5 Vengeance RGB de 2x16GB à 6000 MHz, les temps de chargement sont instantanés et les applications s'exécutent en douceur.",
+        components :{
+            graphicsCard: 'Nvidia RTX 4090 Palit GameRock',
+            processor: 'Intel core i9 13900KF 5,8Ghz',
+            ram: 'Corsair DDR5 Vengeance RGB 2x16GB 6000Mhz Noir',
+            storage: 'Kingston NV1 2To Nvme',
+      },
+    },
+    {
+        title: 'PC Frost Lian',
+        price: 4699.00,
+        image:'https://www.flowup.shop/web/image/product.product/2141/image_1024/PC%20Frost%20Lian%20Li%20O11%20EVO%20%20GEFORCE%20RTX%C2%AE%204080?unique=57ce30d',
+        description: "Le PC Frost, le pc gaming en watercooling custom le plus adoré grâce à son boitier Lian Li O11 EVO ! Un prix record pour du watercooling custom , un circuit complet carte graphique et processeur. Quoiqu'il arrive il garde la tête froide peu importe le jeu en 4K !",
+        components :{
+            graphicsCard: 'Nvidia GeForce RTX 4080 16GB Watercoolé',
+            processor: 'Intel Core i7-13700KF - 5,4Ghz',
+            ram: 'Corsair DDR5 Vengeance RGB 2x16GB 6000Mhz White',
+            storage: 'Kingston NV1 2To',
+      },
+    },
+    {
+        title: 'PC FrenchUltimate',
+        price: 5999.00,
+        image:'https://www.flowup.shop/web/image/product.product/2210/image_1024/PC%20FrenchUltimate%F0%9F%8F%86%20GEFORCE%20RTX%C2%AE4090?unique=a1c1030',
+        description: "Le PC FrenchUltimate est l'ultime pc gamer de rêve de tous les gamers ! Le PC FrenchUltimate n'est pas seulement au sommet de notre gamme, il est aussi à l'apogée de la technologie actuelle. En son cœur bat l'incomparable duo i9 13900KF et RTX 4090, le tout en DDR5, pour une performance sans égal. Mais nous avons poussé encore plus loin : un refroidissement liquide personnalisé enveloppe le processeur et la carte graphique, garantissant ainsi des températures minimales pour des performances maximales. ",
+        components :{
+            graphicsCard: 'Nvidia RTX 4090 24GB MSI Gaming X',
+            processor: 'Intel core i9 13900KF 5,8Ghz',
+            ram: 'Corsair DDR5 Vengeance RGB 2x16GB 6000Mhz Blanche',
+            storage: 'Kingston NV1 2To',
+      },
+    },
+    
+];
+
+
+export default data;

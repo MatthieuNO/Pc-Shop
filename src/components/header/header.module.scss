@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.h2 {
+    color: #CB3028;
+}
+.button {
+    color: #CB3028;
+    font-weight: bold;
+    background: none;
+    height: 35px;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid #CB3028;
+    transition: 0.5s;
+    &:hover {
+        background-color: #CB3028;
+        color: white;
+            }
+
+}

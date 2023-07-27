@@ -1,0 +1,47 @@
+/* PcList.module.scss */
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .cards {
+    border-radius: 20px;
+    background-color: #2f3640;
+    border: solid 3px #718093;
+    cursor: pointer;
+    &:hover {
+      border: solid 3px #e84118;
+    }
+  }
+  
+  .photoCards {
+    background-color: #353b48;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  img {
+    height: 230px;
+    width: auto;
+  }
+  
+  .infosCards {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+  
+  .contentCards {
+    margin: auto;
+    max-width: 1130px;
+    width: 100%;
+  }
+
+  .menue {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
