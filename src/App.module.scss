@@ -1,0 +1,12 @@
+.container {
+    min-height: 100vh;
+    /* Au moins 100% de la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mainContent {
+    flex: 1;
+
+}

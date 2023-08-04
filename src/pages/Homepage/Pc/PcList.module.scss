@@ -1,47 +1,95 @@
-/* PcList.module.scss */
+@use '../../../assets/styles/mixins' as mixin;
+
 .cardsGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  @include mixin.md-lt {
+    grid-template-columns: repeat(1, 1fr)
   }
-  
-  .cards {
-    border-radius: 20px;
-    background-color: #2f3640;
-    border: solid 3px #718093;
-    cursor: pointer;
-    &:hover {
-      border: solid 3px #e84118;
-    }
-  }
-  
-  .photoCards {
-    background-color: #353b48;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    border-radius: 20px;
-  }
-  img {
-    height: 230px;
-    width: auto;
-  }
-  
-  .infosCards {
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    color: white;
-  }
-  
-  .contentCards {
+
+  @include mixin.sm-lt {
     margin: auto;
-    max-width: 1130px;
+    max-width: 400px;
     width: 100%;
   }
+
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contentCards {
+  @include mixin.lg-lt {
+    width: 800px;
+  }
+
+  @include mixin.xs {
+    max-width: 300px;
+  }
+
+  margin: auto;
+  max-width: 1030px;
+  width: 100%;
 
   .menue {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
+  .cards {
+    border-radius: 20px;
+    background-color: var(--gray-2);
+    border: solid 3px var(--gray-1);
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      border: solid 3px var(--gray-2);
+      transform: scale(1.04);
+    }
+
+  }
+
+  .photoCards {
+    background-color: var(--gray-3);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 20px;
+
+    img {
+      height: 220px;
+      width: auto;
+    }
+  }
+}
+
+.infosCards {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: space-around;
+  color: white;
+
+  li {
+    display: flex;
+    margin-bottom: 10px;
+    opacity: 0.7;
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+.noResultsMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 1000px;
+  font-size: 1.3em;
+  color: #555;
+}

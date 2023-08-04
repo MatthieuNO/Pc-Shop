@@ -1,27 +1,45 @@
+@use '../../assets/styles/mixins' as mixin;
+
 .header {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: var(--gray-3);
+    color: white;
+    .optionPcHeader {
+        display: flex;
+    }
+
 }
 
 .h2 {
-    color: #CB3028;
+    color: white;
 }
-.button {
-    color: #CB3028;
-    font-weight: bold;
-    background: none;
-    height: 35px;
-    width: 100px;
-    border-radius: 15px;
-    cursor: pointer;
-    border: 2px solid #CB3028;
-    transition: 0.5s;
-    &:hover {
-        background-color: #CB3028;
-        color: white;
-            }
 
+.number {
+    background-color: #CB3028;
+    width: 25px;
+    height: 25px;
+    color: white;
+    position: absolute;
+    margin-top: -29px;
+    margin-left: 98px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnoption {
+    display: none;
+    @include mixin.xxl {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer
+    }
+    &:hover {
+        opacity: 0.5;
+    }
 }

@@ -1,0 +1,39 @@
+.btn {
+  color: black;
+  font-weight: bold;
+  background: none;
+  height: 35px;
+  width: 150px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid var(--gray-3);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--gray-3);
+    color: white;
+    transform: scale(1.05);
+  }
+}
+
+.btn-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  background: none;
+  height: 35px;
+  width: 100px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--gray-1);
+    transform: scale(1.05);
+    color: white;
+  }
+
+}
